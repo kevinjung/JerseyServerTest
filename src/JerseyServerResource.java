@@ -10,4 +10,11 @@ public class JerseyServerResource {
 	public String helloworld() {
 		return "Hello world!";
 	}
+	
+	@GET
+	@Path("health")
+	public String health() {
+		return "OK"
+	}
+	
 }
